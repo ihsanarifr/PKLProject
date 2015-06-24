@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Button enable</title>
+
+<script type="text/javascript">
+	$(document).on('click','input[type=button]', function() {
+    buttonVal = $(this).val();
+	if(buttonVal == 'Open' )
+		{
+		$(this).prop("disabled", true);
+		$('#holdButton,#closeButton').prop("disabled", false);
+		}
+	else
+		{
+		$('#holdButton,#closeButton').prop("disabled", true);
+		$('#openButton').prop("disabled", false);
+		}
+	});
+</script>
+</head>
+<body>
+<form action="">
+<input type="button" value="Open" id="openButton" name="openButton">
+<input type="button" value="Hold" id="holdButton" name="holdButton" disabled="disabled">
+<input type="button" value="Close" id="closeButton" name="closeButton" disabled="disabled">
+</form>
+</body>
+</html>

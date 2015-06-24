@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Auto Refresh DIV</title>
+<meta name="description" content="Auto refresh the content of DIV after every 10 seconds or with any time.This Concept is used by many sites on web.">
+<meta name="keywords" content="jquery,css,auto refresh,programming tutorials, refresh div jquery,jquery div refresh">
+<meta charset="UTF-8">
+<script src="jquery.js"></script>
+<script>
+var c;
+c=10;
+var autorefresh=setInterval(
+function()
+{
+		$("#toberefresh").html("<p>Yes it is refreshed<p>");
+			e.preventDefault();
+},3000)
+</script>
+<style>
+#toberefresh
+{
+	width:700px;
+	height:300px;
+	border:1px solid black;
+	margin-left:300px;
+	margin-top:150px;
+	position:absolute;
+}
+#title
+{
+	width:700px;
+	height:120px;
+	border:1px solid black;
+	margin-left:300px;
+	position:absolute;
+}
+p
+{
+	font-size:18px;
+	padding-top:100px;
+	padding-left:85px;
+}
+#goback
+{
+font-size:20px;
+color:red;
+}
+</style>
+</head>
+<body>
+<div id="title">
+<h1>Auto Refresh DIV in Specified Time say 3 Seconds</h1>
+<span id="goback">Click here Read the Article</span>
+</div>
+<div id="toberefresh">
+<p> This area will be refresh after 3 second </p>
+</div>
+</body>
+</html>
